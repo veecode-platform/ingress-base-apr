@@ -1,0 +1,14 @@
+global:
+  domain: apps.vkpr.net 
+  ingressClassName: nginx
+  secure: true
+  provider: aws
+cert-manager:
+  email: teste@teste.com 
+  issuer:
+    type: "production"
+    solver: "DNS01"
+external-dns:
+  enabled: true
+nginx:
+  enabled: true
